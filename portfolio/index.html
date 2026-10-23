@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ashley - Personal Portfolio</title>
+  <link rel="icon" type="image/png" href="images/icon.png">
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- Navigation Bar -->
+  <header>
+    <nav class="navbar">
+      <div class="logo">A.<span>M.</span></div>
+      <ul class="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Hero -->
+    <section id="home" class="hero">
+      <div class="hero-overlay"></div>
+      <div class="hero-content">
+        <h1>MY NAME IS ASHLEY</h1>
+        <p class="subtitle animate-text">Computer Simulation & Engineering Student | Computational Engineer</p>
+        <div class="hero-buttons">
+          <a href="#projects" class="btn primary-btn">View Projects</a>
+          <a href="#contact" class="btn secondary-btn">Get In Touch</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Me -->
+    <section id="about" class="about">
+      <div class="section-title">
+        <h2>About Me</h2>
+        <div class="underline"></div>
+      </div>
+      <div class="about-container">
+      <p>  Motivated and ambitious Computer Simulation student at Bethlehem University, eager to learn and apply HTML to create engaging web experiences. Strong background in mathematics, physics, and programming, with excellent problem-solving and analytical skills. Proven ability to work collaboratively, manage time effectively, and adapt to challenging environments. Fluent in English and Arabic, with proficiency in French and Spanish. </p>
+      </div>
+    </section>
+
+    <!-- Skills -->
+    <section id="skills" class="skills">
+      <div class="section-title">
+        <h2>Skills</h2>
+        <div class="underline"></div>
+      </div>
+      <div class="skills-grid">
+        <div class="skill-card">
+          <h3>Web Development</h3>
+          <p>HTML5, CSS, Responsive Web Design</p>
+        </div>
+        <div class="skill-card">
+          <h3>Programming Languages</h3>
+          <p>Java (JavaFX, OOP), JavaScript</p>
+        </div>
+        <div class="skill-card">
+          <h3>Engineering Tools</h3>
+          <p>Abaqus FEA, Mesh Generation, Structured Partitioning</p>
+        </div>
+        <div class="skill-card">
+          <h3>Problem Solving</h3>
+          <p>Algorithms, Data Structures, Competitive Programming</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects-->
+    <section id="projects" class="projects">
+      <div class="section-title">
+        <h2>Projects</h2>
+        <div class="underline"></div>
+      </div>
+      <div class="projects-grid">
+
+        <!-- Project 1 -->
+        <article class="project-card">
+          <div class="project-image">
+            <img src="images/Petnees.jpeg" alt="Petnees JavaFX Desktop Application">
+          </div>
+          <div class="project-info">
+            <h3>Petnees JavaFX Application</h3>
+            <p>
+              A JavaFX desktop software application featuring a pet store simulation, 
+              interactive GUI controllers, and product catalog filtering logic loaded dynamically from file storage.
+            </p>
+            <div class="tags">
+              <span>Java</span>
+              <span>JavaFX</span>
+              <span>OOP</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- Project 2 -->
+        <article class="project-card">
+          <div class="project-image">
+            <img src="images/abaqus.png" alt="Abaqus FEA Mesh Convergence Study">
+          </div>
+          <div class="project-info">
+            <h3>Finite Element Analysis & Simulation</h3>
+            <p>
+              A series of engineering simulation models constructed in Abaqus evaluating stress concentrations, 
+              plane stress/strain conditions, and plastic deformation using structured 3D hexahedral meshes.
+            </p>
+            <div class="tags">
+              <span>Abaqus</span>
+              <span>FEA</span>
+              <span>Engineering</span>
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+      <div class="section-title">
+        <h2>Contact Me</h2>
+        <div class="underline"></div>
+      </div>
+      <div class="contact-container">
+        <div class="contact-info">
+          <p>Feel free to reach out to me for collaboration or inquiries!</p>
+          <ul class="contact-details">
+            <li><strong>Email:</strong><span style="color:#ef4444 ;"> ashlymasad@gmail.com</span></li>
+            <li><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/ashley-massad-73a714348?lipi=urn%3Ali3Apage3Ad_flagship_profile_view_base_contact_details3B8J19fihqQJGCPICzUkuCeQ3D%3D" target="_blank" rel="noopener noreferrer">linkedin/AshleyMassad</a></li>
+            <li><strong>GitHub:</strong> <a href="https://github.com/ashleymasad" target="_blank" rel="noopener noreferrer">github/Ashley</a></li>
+          </ul>
+        </div>
+
+        <form class="contact-form" action="#" method="POST" onsubmit="event.preventDefault(); alert('Message sent successfully!');">
+          <div class="form-group">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" required placeholder="Your Name">
+          </div>
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required placeholder="Your Email">
+          </div>
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="5" required placeholder="Your Message"></textarea>
+          </div>
+          <button type="submit" class="btn primary-btn">Send Message</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 Ashley. All Rights Reserved.</p>
+  </footer>
+
+</body>
+</html>
